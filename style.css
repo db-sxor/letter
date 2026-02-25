@@ -168,6 +168,10 @@ section {
     padding-right: 20px;
   }
 
+  .inline-questions a {
+    font-size: 18px;
+  }
+
 }
 
 @media (hover: none) and (pointer: coarse) {
