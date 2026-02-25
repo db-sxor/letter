@@ -114,18 +114,43 @@ section {
 
 @media (max-width: 768px) {
   section {
-    padding: 70px 20px;
-    padding-top: 30px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .card {
-    padding: 25px;
-    font-size: 16px;
+  .cards {
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 
-  .hero h1 { font-size: 30px; }
-  .hero p { font-size: 16px; }
-  .description { font-size: 16px; }
+  .inline-questions {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .description {
+    margin-top: 40px !important;
+  }
+
+  section, .cards {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+  }
+
+  section:nth-of-type(1) { animation-delay: 0.2s; }
+  section:nth-of-type(2) { animation-delay: 0.4s; }
+  .cards { animation-delay: 0.3s; }
+
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 480px) {
