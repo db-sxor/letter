@@ -75,6 +75,9 @@ section {
   color: #999;
 }
 
+.m-br { display: none; }
+.pc-only { display: inline; }
+
 @media (min-width: 769px) {
   .inline-questions a:hover {
     color: #111;
@@ -148,6 +151,3 @@ section {
   .m-br { display: inline; }
   .pc-only { display: none; }
 }
-
-.m-br { display: none; }
-.pc-only { display: inline; }
