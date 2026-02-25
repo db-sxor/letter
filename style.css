@@ -142,21 +142,30 @@ section {
 
 @media (max-width: 480px) {
   section {
-    padding: 60px 18px;
-    padding-top: 40px;
+    padding: 100px 24px;
+    padding-top: 70px;
+    min-height: 100vh;
   }
 
   .hero h1 {
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 1.5;
   }
 
-  .hero p,
-  .description,
+  .hero p {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
   .card {
-    font-size: 15px;
+    font-size: 18px;
+    padding: 28px;
   }
 
   .inline-questions a {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
