@@ -169,3 +169,10 @@ section {
   }
 
 }
+
+@media (hover: none) and (pointer: coarse) {
+  .inline-questions a::after {
+    opacity: 1;
+    transform: none;
+  }
+}
