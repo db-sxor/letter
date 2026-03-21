@@ -14,9 +14,7 @@ section {
   margin: 0 auto;
 }
 
-.hero {
-  text-align: center;
-}
+.hero { text-align: center; }
 
 .hero h1 {
   font-size: 42px;
@@ -30,13 +28,13 @@ section {
   color: #555;
 }
 
-.cards {
+.boxes {
   display: grid;
   gap: 30px;
   margin-top: 50px;
 }
 
-.card {
+.box {
   padding: 35px;
   border-radius: 18px;
   background: #ffffff;
@@ -51,9 +49,7 @@ section {
   margin: 0 auto;
 }
 
-.inline-questions {
-  margin-top: 30px;
-}
+.inline-questions { margin-top: 30px; }
 
 .inline-questions a {
   position: relative;
@@ -107,14 +103,8 @@ section {
 }
 
 @media (max-width: 768px) {
-
-  body {
-    background: #f7f7f7;
-  }
-
-  section {
-    padding: 90px 0;
-  }
+  body { background: #f7f7f7; }
+  section { padding: 90px 0; }
 
   .hero h1 {
     font-size: 32px;
@@ -127,17 +117,9 @@ section {
     padding: 0 18px;
   }
 
-  .cards {
-    padding: 0 18px;
-  }
-
-  .card {
-    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
-  }
-
-  .inline-questions {
-    padding: 0 18px;
-  }
+  .boxes { padding: 0 18px; }
+  .box { box-shadow: 0 8px 20px rgba(0,0,0,0.04); }
+  .inline-questions { padding: 0 18px; }
 
   .inline-questions a {
     background: #ffffff;
@@ -164,3 +146,86 @@ section {
   .m-br { display: inline; }
   .pc-only { display: none; }
 }
+
+.container { padding: 12px; }
+
+.guide {
+  font-size: 13px;
+  color: #444;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.scroll {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: calc(50vw - 70px);
+  padding-right: calc(50vw - 70px);
+  background: #f8f8f8;
+}
+
+@media (min-width: 768px) {
+  .scroll {
+    gap: 36px;
+    padding-left: calc(50vw - 90px);
+    padding-right: calc(50vw - 90px);
+  }
+
+  .card { flex: 0 0 180px; }
+}
+
+.scroll::-webkit-scrollbar { display: none; }
+
+.card {
+  flex: 0 0 140px;
+  aspect-ratio: 3 / 4;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  padding: 10px;
+  position: relative;
+  scroll-snap-align: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  transform-origin: center center;
+}
+
+.card:active { transform: scale(0.95); }
+.card:active { transform: scale(0.95); }
+
+.text-layer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  color: #222;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  cursor: pointer;
+}
+
+.card.open .text-layer { filter: brightness(0.5) blur(0.5px); }
+.card.open .overlay { opacity: 1; }
