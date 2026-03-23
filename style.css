@@ -161,8 +161,8 @@ section {
   gap: 18px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 27px;
+  padding-top: 27px;
   padding-left: calc(50vw - 41vw);
   padding-right: calc(50vw - 41vw);
   background: #f8f8f8;
