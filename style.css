@@ -184,7 +184,7 @@ section {
 .scroll::-webkit-scrollbar { display: none; }
 
 .card {
-  flex: 0 0 82vw;
+  flex: 0 0 75vw;
   max-width: 420px;
   aspect-ratio: 3 / 4;
   background: white;
