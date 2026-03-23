@@ -18,39 +18,24 @@ const data = [
     extra:"내일 일을 결코 염려하지 마십시오.\n내일은 내일의 염려가 있을 것입니다.\n그날의 괴로움은 그날로 충분합니다.\n- 마태복음 6:34" },
 
   { lines:[
-    {text:"요즘은 이상하게", top:"22%", left:"10%", size:"clamp(12px, 3vw, 18px)"},
-    {text:"조용해지고 싶다.", top:"40%", left:"10%", size:"clamp(12px, 3vw, 18px)"}], 
-    extra:"혼자 있는 시간이 필요하다." },
+    {text:"준비중", top:"50%", left:"50%", size:"clamp(12px, 3vw, 18px)"}], 
+    extra:"준비중\n." },
 
   { lines:[
-    {text:"오늘 하루는", top:"20%", left:"10%", size:"clamp(12px, 3vw, 18px)"},
-    {text:"괜찮았다.", top:"36%", left:"10%", size:"clamp(12px, 3vw, 18px)"}], 
-    extra:"작은 일들이 쌓였다." },
+    {text:"준비중", top:"50%", left:"50%", size:"clamp(12px, 3vw, 18px)"}], 
+    extra:"준비중\n." },
 
   { lines:[
-    {text:"괜히 웃음이 나왔다.", top:"30%", left:"10%", size:"clamp(12px, 3vw, 18px)"}], 
-    extra:"이유 없어도 괜찮다." },
+    {text:"준비중", top:"50%", left:"50%", size:"clamp(12px, 3vw, 18px)"}], 
+    extra:"준비중\n." },
 
-  { lines:[
-    {text:"아무것도 안 했는데", top:"24%", left:"10%", size:"clamp(12px, 3vw, 18px)"}], 
-    extra:"시간은 잘 간다." },
+    { lines:[
+    {text:"준비중", top:"50%", left:"50%", size:"clamp(12px, 3vw, 18px)"}], 
+    extra:"준비중\n." },
 
-  { lines:[
-    {text:"조금 더 솔직해지면", top:"26%", left:"10%", size:"clamp(12px, 3vw, 18px)"}], 
-    extra:"편해질까" },
-
-  { lines:[
-    {text:"괜히 그때가 생각난다.", top:"32%", left:"10%", size:"clamp(12px, 3vw, 18px)"}], 
-    extra:"단순했던 시기" },
-
-  { lines:[
-    {text:"오늘은 그냥", top:"24%", left:"10%", size:"clamp(12px, 3vw, 18px)"},
-    {text:"쉬어도 될 것 같다.", top:"42%", left:"10%", size:"clamp(12px, 3vw, 18px)"}], 
-    extra:"충분히 했다" },
-
-  { lines:[
-    {text:"내일은 조금", top:"26%", left:"10%", size:"clamp(12px, 3vw, 18px)"}], 
-    extra:"다르게 살아볼까" }
+    { lines:[
+    {text:"준비중", top:"50%", left:"50%", size:"clamp(12px, 3vw, 18px)"}], 
+    extra:"준비중\n." }
 ];
 
 const scroll = document.getElementById('scroll');
