@@ -163,8 +163,8 @@ section {
   scroll-snap-type: x mandatory;
   padding-bottom: 15px;
   padding-top: 15px;
-  padding-left: calc(50vw - 70px);
-  padding-right: calc(50vw - 70px);
+  padding-left: calc(50vw - 41vw);
+  padding-right: calc(50vw - 41vw);
   background: #f8f8f8;
 }
 
@@ -175,13 +175,17 @@ section {
     padding-right: calc(50vw - 90px);
   }
 
-  .card { flex: 0 0 180px; }
+  .card {
+    flex: 0 0 360px;
+    max-width: 360px;
+  }
 }
 
 .scroll::-webkit-scrollbar { display: none; }
 
 .card {
-  flex: 0 0 140px;
+  flex: 0 0 82vw;
+  max-width: 420px;
   aspect-ratio: 3 / 4;
   background: white;
   border-radius: 10px;
