@@ -210,7 +210,6 @@ section {
 .line {
   position: absolute;
   left: 0;
-  right: 0;
   font-size: 11px;
   color: #222;
 }
