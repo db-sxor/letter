@@ -210,7 +210,7 @@ section {
 .line {
   position: absolute;
   left: 0;
-  font-size: 5vw;
+  font-size: 3vw;
   color: #222;
 }
 
@@ -228,6 +228,7 @@ section {
   opacity: 0;
   transition: opacity 0.25s ease;
   cursor: pointer;
+  flex-direction: column;
 }
 
 .card.open .text-layer { filter: brightness(0.5) blur(0.5px); }
