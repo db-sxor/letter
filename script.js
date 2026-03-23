@@ -41,6 +41,7 @@ function createCard(item){
     if(i === lines.length - 1) {
       div.style.alignSelf = 'flex-end';
       div.style.textAlign = 'right';
+      div.style.marginRight = '8px';
     }
     overlay.appendChild(div);
   });

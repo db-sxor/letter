@@ -210,7 +210,7 @@ section {
 .line {
   position: absolute;
   left: 0;
-  font-size: 3vw;
+  font-size: clamp(12px, 3vw, 18px);
   color: #222;
 }
 
