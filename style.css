@@ -161,8 +161,8 @@ section {
   gap: 18px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   padding-left: calc(50vw - 41vw);
   padding-right: calc(50vw - 41vw);
   background: #f8f8f8;
@@ -184,8 +184,8 @@ section {
 .scroll::-webkit-scrollbar { display: none; }
 
 .card {
-  flex: 0 0 75vw;
-  max-width: 420px;
+  flex: 0 0 70vw;
+  max-width: 350px;
   aspect-ratio: 3 / 4;
   background: white;
   border-radius: 10px;
